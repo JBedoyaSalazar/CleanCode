@@ -29,6 +29,8 @@ greet()
 
 function add(x,y,...args){
     console.log(args)
+    console.log(`Suma de X+Y = ${x+y}`)
+    console.log(`Suma de los ...args despues de X,Y ${args.reduce((prev, current) => prev+current, 0)}`)
 }
 
 add(1,2,3,4,5)
