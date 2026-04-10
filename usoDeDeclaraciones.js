@@ -25,8 +25,8 @@ console.log('---------------------------------')
 let ageSecondExample = 28
 
 {
-    console.log('Valor dentro del bloque', ageSecondExample) //28
-    ageSecondExample = 29
+    console.log('Valor dentro del bloque', ageSecondExample) //error
+    let ageSecondExample = 29 //definir antes del console.log
 }
 
 console.log('Valor fuera del bloque', ageSecondExample) //29
